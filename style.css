@@ -1,0 +1,62 @@
+body {
+    /* you can use a more complete font-family from VSCode as well */
+    font-family: arial;
+}
+
+.header {
+    background-color: lightgreen;
+    padding: 1em;
+}
+
+.main {
+    background-color : lightseagreen;
+}
+
+.footer {
+    background-color: lightgreen;
+    padding: 1em;
+}
+.side-bar {
+    float: right;
+    /* width: 25%; */
+    padding: 1em;
+    /* border: 1px solid; */
+}
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+}
+
+.content {
+    padding: 1em;
+    /* border: 1px solid; */
+}
+
+@media(min-width:800px){
+    .side-bar {
+        float: left;
+        width: 25%;
+    }
+
+    .menu {
+        display: flex;
+    }
+}
+
+ /* remove the list item dots*/
+ .menu li {
+    list-style: none;
+}
+
+
+.menu a {
+    /* Ensure one can click anyware in the li for the link */
+    padding: 1em;
+    display: block;
+    width: 6em;
+}
+
+.menu a:hover {
+    /* Change the menu color to darker green when hovering over a link*/
+    background-color : lightseagreen;
+}
